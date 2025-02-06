@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* -------------- END RESET CSS -------------- */
+
+:root {
+  --primary: #171511;
+  --secondary: #f5f1eb;
+  --tertiary: #f8c126;
+  --gray: #49453f;
+}
+
+/* -------------- END CSS VARIABLES -------------- */
+
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn {
+  background-color: var(--tertiary);
+  color: var(--secondary);
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+textarea {
+  background-color: var(--gray);
+  color: var(--secondary);
+  border: none;
+  resize: none;
+}
