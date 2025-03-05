@@ -1,7 +1,7 @@
 document.getElementById("sortearForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const dataInicio = new Date(document.getElementById("dataInicio").value);
+    const dataInicio = new Date(document.getElementById("dataInicio").value + "T00:00:00");
     const numApresentacoes = parseInt(document.getElementById("numApresentacoes").value, 10);
     let nomes = document.getElementById("nomes").value.trim().split("\n").map(nome => nome.trim()).filter(nome => nome);
 
